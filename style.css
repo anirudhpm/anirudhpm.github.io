@@ -1,0 +1,151 @@
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link.active::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 4px; 
+      left: 9px;
+      width: 40%;
+      background: black;
+      -o-transition:.5s;
+        -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:all 2s;
+}
+
+.nav-link::after
+{
+    position: absolute;
+    content: '';
+    height: 2px;
+  top:34px;
+      left: 9px;
+      width: 0%;
+      background: black;
+      -o-transition:all .3s;
+        -ms-transition:all .3s;
+    -moz-transition:all .3s;
+    -webkit-transition:all .3s;
+    transition:all .3s;
+}
+
+.nav-link:hover::after{
+    width: 40%;
+}
+
+body{
+height: 100vh;
+font-family: GTWalsheimRegular;
+}
+
+@font-face {
+    font-family: "GTWalsheimRegular";
+    src: url("assets/GT\ Walsheim\ Regular.ttf");
+    
+    }
+
+  .gray{
+      color: gray;
+  }
+
+  .red{
+    color: #d53f38;
+  }
+
+  .topic a {
+      position: relative;
+  }
+
+  .topic a h2::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+  top:.2em;
+      left: 0px;
+      width: 0%;
+      background: black;
+    -o-transition:all .1s;
+    -ms-transition:all .1s;
+-moz-transition:all .1s;
+-webkit-transition:all .1s;
+transition:all .1s;
+  }
+
+  .topic a h2:hover::after{
+     width: 100%;
+  }
+
+  .topic a h2:hover{
+      color:#d53f38;
+  }
+
+  .w-85{
+      width: 85%;
+  }
+
+  .topicSelected{
+    color:#d53f38;
+  }
+
+  .topicSelected::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+  top:.2em;
+      left: 0px;
+      width: 100% !important;
+      background: black;
+    -o-transition:all .1s;
+    -ms-transition:all .1s;
+-moz-transition:all .1s;
+-webkit-transition:all .1s;
+transition:all .1s;
+  }
+
+  .hashList{
+    list-style: none;
+    font-family: GTWalsheimRegular;
+    padding-left: 0px;
+
+  }
+
+  .hashList li{
+    display: inline-block;
+    margin-left: 4px;
+  }
+
+  .hashList li:before {
+    content: "#"; 
+    padding-right: 1px;
+    
+}
+
+.h-145{
+    height: 125%;
+    margin-top: -7.5vh;
+}
+.drawdiodescr{
+    position: relative; 
+    
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    text-align: right;
+    color: #17161b;
+}
+.drawdiodescr::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+  top:0px;
+      right: -15px;
+      width: 4px;
+      background: #d53f38;
+}
