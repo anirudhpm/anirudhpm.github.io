@@ -1,4 +1,6 @@
-
+#content{
+    overflow: hidden;
+}
 .nav-link {
     position: relative;
 }
@@ -45,7 +47,7 @@ font-family: GTWalsheimRegular;
 
 @font-face {
     font-family: "GTWalsheimRegular";
-    src: url("assets/GT\ Walsheim\ Regular.ttf");
+    src: url("../assets/GT\ Walsheim\ Regular.ttf");
     
     }
 
@@ -88,6 +90,27 @@ transition:all .1s;
       width: 85%;
   }
 
+  .w-60{
+    width: 60%;
+}
+  .h-80{
+    height: 80%;
+}
+
+.h-85{
+    height: 85%;
+}
+
+  .w-65{
+    width: 65%;
+}
+
+.h-145{
+    height: 125%;
+    margin-top: -7.5vh;
+}
+
+
   .topicSelected{
     color:#d53f38;
   }
@@ -125,10 +148,7 @@ transition:all .1s;
     
 }
 
-.h-145{
-    height: 125%;
-    margin-top: -7.5vh;
-}
+
 .drawdiodescr{
     position: relative; 
     
@@ -148,4 +168,41 @@ transition:all .1s;
       right: -15px;
       width: 4px;
       background: #d53f38;
+}
+
+.drawdiofinal{
+    position: relative; 
+   font-weight: 500;
+   font-size: 1.3rem;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #17161b;
+}
+
+.drawdiofinal::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+  bottom:-25px;
+  right: 40%;
+      width: 20%;
+      background: #d53f38;
+}
+
+.drawdiofooter{
+    font-size: 13px;
+   
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #6a6a6a;
+}
+
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }

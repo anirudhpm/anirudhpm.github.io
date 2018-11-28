@@ -8,8 +8,9 @@ $('a.nav-item.nav-link').click(function(){
 
 $(window).mousewheel(function(event, delta) {
     event.preventDefault();
-    var scrollx = $(window).scrollLeft();
-    $(window).scrollLeft(scrollx-(delta * 100));
+    var scrollx = $('#content').scrollLeft();
+    
+    $('#content').scrollLeft(scrollx-(delta * 100));
     });
 
   function drawdio(){
@@ -29,8 +30,8 @@ $(window).mousewheel(function(event, delta) {
     };
     loadContent('Drawdio.html');
 }
-    
-    
-    
+
+
+
     
     
