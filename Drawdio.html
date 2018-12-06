@@ -1,22 +1,42 @@
-<div class="row flex-row  flex-nowrap h-100 ">
-    <div class="col-5  p-5 ml-3 align-self-center h-100">
+<style>
+    body{
+        background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(209,74,84,1) 70%);
+    }
+    .navbar-light .navbar-nav .nav-link,  .hashList li{
+        color: rgba(254,254,254,.7);
+    }
+    .navbar-light .navbar-nav .nav-link.active  , .navbar-light .navbar-nav .nav-link:hover{
+        color: rgba(254,254,254,1);
+    }
+    
+    .nav-link.active::after, .nav-link::after{
+        background: rgba(254,254,254,1); 
+    }
+    .topicSelected, .topic a h2:hover, .red{color:#c6a655 !important;}
+    .topic a h2::after{ background:#d2b740;}
+   .img-fluid{max-height: 100%;}
+    </style>
+
+
+<div class="row flex-row  pb-3 flex-nowrap h-100 ">
+    <div class="col-12 col-md-6  p-5 ml-md-3 align-self-center h-100">
         <div class="d-flex justify-content-between flex-column h-100 mt-2">
-            <div class="topic"><a class="text-dark" href="#">
+            <div class="topic text-white"><a class="text-white" href="#">
                     <h2 class="d-inline-block">Arail</h2>
                 </a><span class="h2 p-2"> /</span>
-                <a class="text-dark" href="#">
+                <a class="text-white" href="#">
                     <h2 class="d-inline-block topicSelected">Drawdio </h2>
                 </a><span class="h2 p-2"> /</span>
-                <a class="text-dark" href="#">
+                <a class="text-white" href="#">
                     <h2 class="d-inline-block">Juley </h2>
                 </a><span class="h2 p-2"> /</span>
-                <a class="text-dark" href="#">
+                <a class="text-white" href="#">
                     <h2 class="d-inline-block">Keep it today </h2>
                 </a><span class="h2 p-2"> /</span>
-                <a class="text-dark" href="#">
+                <a class="text-white" href="#">
                     <h2 class="d-inline-block">Superstats </h2>
                 </a><span class="h2 p-2"> /</span>
-                <a class="text-dark" href="#">
+                <a class="text-white" href="#">
                     <h2 class="d-inline-block">Tune of Creativity</h2>
                 </a></div>
             <ul class="hashList gray">
@@ -30,36 +50,32 @@
             </ul>
         </div>
     </div>
-    <div id="loadimg" class="col-7  p-5  ml-1 ">
-        <div class="d-flex justify-content-center flex-column h-100">
-            <img class="img-fluid w-85 ml-auto mr-5  " src="assets/drawdio-display.png" />
-        </div>
+    <div id="" class="col-12 col-md-6"></div>
+    <div id="drawdio1" class="col-12 col-md-6 d-flex flex-column justify-content-end hide">
+        <img class="img-fluid ml-auto h-100  mr-3" src="assets/dsc-8377.png" />
     </div>
-    <div class="col-5 ml-5 d-flex flex-column justify-content-end ">
-        <img class="img-fluid h-85 ml-auto  mr-3" src="assets/dsc-8377.png" />
-    </div>
-    <div class="col-3 d-flex align-items-center ">
-        <p class="drawdiodescr">An interactive apparatus enabling you to playfully explore artistic expression as you
+    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center  hide">
+        <p class="drawdiodescr w-50">An interactive apparatus enabling you to playfully explore artistic expression as you
             create sound and image at the same time. Hover over the musical pipes and watch the drawing robot visualise
             your tune.
         </p>
     </div>
-    <div class="col-6 d-flex flex-column justify-content-end   ">
+    <div class="col-12 col-md-6 ml-md-auto d-flex flex-column justify-content-end  pb-3 ">
            <div class="ml-auto  mr-4 mb-3"> <p class="drawdiodescr mr-3">User interacting with the apparatus</p></div>
         <div class="w-65 ml-auto  mr-4" style="margin-bottom: -20px">
             <img class="img-fluid w-100 ml-auto " src="assets/drawdio1.png" />
         </div>
     </div>
-    <div class="col-5 ml-5 d-flex flex-column justify-content-start ">
-        <img class="img-fluid h-85 ml-auto mt-3 mr-3 " src="assets/dsc-0556.png" />
+    <div class="col-12 col-md-6  mr-md-auto d-flex flex-column justify-content-start ">
+        <img class="img-fluid h-85 mx-auto " src="assets/dsc-0556.png" />
     </div>
-    <div class="col-7 ml-5 d-flex flex-column justify-content-start ">
-         <img class="img-fluid h-100 mr-auto mr-3 " src="assets/group.png" />
+    <div class="col-12 ml-md-5  d-flex flex-column justify-content-start ">
+         <img class="img-fluid  my-auto mx-auto " src="assets/group.png" />
     </div>
-    <div class="col-7 ml-3 d-flex flex-column justify-content-start ">
-         <img class="img-fluid h-100 mr-auto mr-3 " src="assets/drawdio1.png" />
+    <div class="col-12 ml-md-3 d-flex flex-column justify-content-start ">
+         <img class="img-fluid my-auto mx-auto" src="assets/drawdio1.png" />
     </div>
-    <div class="col-6 ml-5 d-flex flex-column justify-content-between pr-3">
+    <div class="col-12 pr-md-5 d-flex flex-column justify-content-between pr-3">
         <img class="img-fluid h-75 ml-auto " src="assets/Group 4.png" />
         <div class="ml-auto w-60 "> <p class="drawdiodescr mr-3">This is one of the final visualization 
             done by drawdio to the tune played by the user. The drawdio's turns are limited to its radius
@@ -78,3 +94,4 @@
             <img class="img-fluid  mr-auto mr-3" src="assets/Left Icon.png" />
        </div>
 </div>
+

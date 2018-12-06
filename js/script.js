@@ -9,9 +9,9 @@ $('a.nav-item.nav-link').click(function(){
 $(window).mousewheel(function(event, delta) {
     event.preventDefault();
     var scrollx = $('#content').scrollLeft();
+     $('#content').scrollLeft(scrollx-(delta * 30));
     
-    $('#content').scrollLeft(scrollx-(delta * 100));
-    });
+});
 
   function drawdio(){
 
@@ -23,7 +23,20 @@ $(window).mousewheel(function(event, delta) {
      
         $pageContent.load(url, function(){
             $pageContent.fadeIn();
+            $('#logo').attr("src","assets/logo-icon-white.png");
             
+            var controller = new ScrollMagic.Controller({vertical: false});
+
+            //var tween =TweenMax.to("#drawdio1",1,{opacity: "1"});
+            var scene = new ScrollMagic.Scene({
+               triggerElement: '.hide',triggerHook:0.7
+        })
+       // .setTween(tween)
+       .setClassToggle(".hide","show")
+        //.addIndicators()
+        .addTo(controller); 
+   
+    
         });
      
       

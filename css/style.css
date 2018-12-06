@@ -1,5 +1,6 @@
 #content{
     overflow: hidden;
+    height: 86vh;
 }
 .nav-link {
     position: relative;
@@ -98,7 +99,7 @@ transition:all .1s;
 }
 
 .h-85{
-    height: 85%;
+    max-height: 85% !important;
 }
 
   .w-65{
@@ -179,7 +180,7 @@ transition:all .1s;
     line-height: normal;
     letter-spacing: 0.1px;
     text-align: center;
-    color: #17161b;
+    color: #fff;
 }
 
 .drawdiofinal::after{
@@ -200,9 +201,19 @@ transition:all .1s;
     line-height: 1.2;
     letter-spacing: 0.1px;
     text-align: center;
-    color: #6a6a6a;
+    color: #fff6;
 }
 
 .shadow{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
+.show{opacity: 1 !important;}
+.hide{
+    opacity: 0;
+    -o-transition:all .5s;
+    -ms-transition:all .5s;
+-moz-transition:all .5s;
+-webkit-transition:all .5s;
+transition:all .5s;
+}
+

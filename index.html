@@ -11,27 +11,27 @@
     </head>
     <body>
             <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light px-3 mx-3">
-                   
+                <a class="navbar-brand mx-auto mr-md-auto ml-md-3" href="#"><img id="logo" src="assets/logo-icon2x.png"  width="32px"></a>
+                        
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                      <div class="navbar-nav w-100 pr-3">
-                        <a class="nav-item nav-link ml-4 mr-4 active" href="#">Works</a>
-                        <a class="nav-item nav-link mr-auto " href="#">Process</a>
-                        <a class="navbar-brand mx-auto" href="#"><img src="assets/logo-icon2x.png" height="32px" width="32px"></a>
-                        <a class="nav-item nav-link ml-auto " href="#">Extras</a>
-                        <a class="nav-item nav-link ml-4 mr-4" href="#">About</a>
+                      <div class="navbar-nav w-100">
+                        <a class="nav-item nav-link ml-md-5 active" href="#">Works</a>
+                        <a class="nav-item nav-link ml-md-4" href="#">Process</a>
+                        <a class="nav-item nav-link ml-md-4" href="#">Extras</a>
+                        <a class="nav-item nav-link ml-md-4" href="#">About</a>
                       </div>
                     </div>
                   </nav>
 
-
+                 
                 
-                  <div id="content" class="container-fluid mt-3 h-80 ">
+                  <div id="content" class="container-fluid mt-3">
                         
                         <div class="row p-5 flex-row flex-nowrap h-100 ">
-                            <div class="col-5 align-self-center h-100">
+                            <div class="col-12 col-md-5 align-self-center h-100">
                                 <div class="d-flex justify-content-between flex-column h-100 mt-2">
                                     <div class="topic"><a class="text-dark" href="#"><h2 class="d-inline-block">Arail</h2></a><span class="h2 p-2">  /</span>
                                         <a class="text-dark" onclick="drawdio()"><h2 class="d-inline-block ">Drawdio </h2></a><span class="h2 p-2"> /</span>
@@ -51,7 +51,7 @@
                                 </ul>
                                 </div>
                             </div>
-                            <div class="col-7 ml-1 align-self-center h-100">
+                            <div class="col-12 d-none d-md-block col-md-7 ml-1 align-self-center h-100">
                                     <div class="d-flex justify-content-center   flex-column h-100">
                                        <div class="w-85 h-100 ml-auto mr-3  bg-danger"></div>
                                     </div>
@@ -68,9 +68,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type='text/javascript' src="js/jquery.mousewheel.js"></script>
          <script src="js/script.js" ></script>
-         <script src="js/wow.min.js"></script>
-         <script>
-                new WOW().init();
-              </script>
+         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js'></script>
+
 </body>
 </html>
