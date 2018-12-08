@@ -1,5 +1,5 @@
 
-$(window).on('load',function() {
+$( document ).ready(function() {
   // When the page has loaded
   $("body").fadeIn(200);
 });
