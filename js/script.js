@@ -6,45 +6,34 @@ $('a.nav-item.nav-link').click(function(){
     $(this).addClass('active');
 })
 
-$(window).mousewheel(function(event, delta) {
-    event.preventDefault();
-    var scrollx = $('#content').scrollLeft();
-     $('#content').scrollLeft(scrollx-(delta * 30));
-    
-});
+$('.topic a').click(function(){
+    $('.topic a h2').removeClass('topicSelected');
+    $(this).children('h2').addClass('topicSelected');
+})
 
-  function drawdio(){
+$('.topic a').mouseover(function(){
+    $('.topic a h2').removeClass('topicSelected');
+    $(this).children('h2').addClass('topicSelected');
+})
 
-    var $pageContent = $('#content');
-    
-    
-    var loadContent = function(url) {
-        $pageContent.hide();
-     
-        $pageContent.load(url, function(){
-            $pageContent.fadeIn();
-            $('#logo').attr("src","assets/logo-icon-white.png");
-            
-            var controller = new ScrollMagic.Controller({vertical: false});
+function arail(){
+    $('body').removeClass().addClass("arail");
+    }
 
-            //var tween =TweenMax.to("#drawdio1",1,{opacity: "1"});
-            var scene = new ScrollMagic.Scene({
-               triggerElement: '.hide',triggerHook:0.7
-        })
-       // .setTween(tween)
-       .setClassToggle(".hide","show")
-        //.addIndicators()
-        .addTo(controller); 
-   
-    
-        });
-     
-      
-    };
-    loadContent('Drawdio.html');
+function drawdio(){
+$('body').removeClass().addClass("drawdio");
 }
 
+function juley(){
+    $('body').removeClass().addClass("juley");
+    }
 
+function most(){
+    $('body').removeClass().addClass("most");
+    }
 
+function jam(){
+    $('body').removeClass().addClass("jam");
+    }
     
     

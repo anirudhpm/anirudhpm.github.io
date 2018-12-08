@@ -13,12 +13,12 @@
     bottom: 4px; 
       left: 9px;
       width: 40%;
-      background: black;
+      background: #fff;
       -o-transition:.5s;
         -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
-    transition:all 2s;
+    transition:all .5s;
 }
 
 .nav-link::after
@@ -29,7 +29,7 @@
   top:34px;
       left: 9px;
       width: 0%;
-      background: black;
+      background: #fff;
       -o-transition:all .3s;
         -ms-transition:all .3s;
     -moz-transition:all .3s;
@@ -43,12 +43,20 @@
 
 body{
 height: 100vh;
-font-family: GTWalsheimRegular;
+font-family: SpaceGrotesk;
+background-size: cover;
+
+-o-transition:all .3s linear ;
+-ms-transition:all .3s linear ;
+-moz-transition:all .3s linear ;
+-webkit-transition:all .3s linear ;
+transition:all .3s linear ;
+
 }
 
 @font-face {
-    font-family: "GTWalsheimRegular";
-    src: url("../assets/GT\ Walsheim\ Regular.ttf");
+    font-family: "SpaceGrotesk";
+    src: url("../assets/SpaceGrotesk/SpaceGrotesk-Regular.woff");
     
     }
 
@@ -62,8 +70,14 @@ font-family: GTWalsheimRegular;
 
   .topic a {
       position: relative;
+      color: #343a40;
   }
 
+  .topic a h2{letter-spacing: 0.2px}
+.topic span{
+  vertical-align: top;
+    line-height: 1.75rem;
+}
   .topic a h2::after{
     position: absolute;
     content: '';
@@ -87,30 +101,7 @@ transition:all .1s;
       color:#d53f38;
   }
 
-  .w-85{
-      width: 85%;
-  }
-
-  .w-60{
-    width: 60%;
-}
-  .h-80{
-    height: 80%;
-}
-
-.h-85{
-    max-height: 85% !important;
-}
-
-  .w-65{
-    width: 65%;
-}
-
-.h-145{
-    height: 125%;
-    margin-top: -7.5vh;
-}
-
+  
 
   .topicSelected{
     color:#d53f38;
@@ -133,8 +124,11 @@ transition:all .1s;
 
   .hashList{
     list-style: none;
-    font-family: GTWalsheimRegular;
+    font-family: SpaceGrotesk;
     padding-left: 0px;
+    width: 70%;
+    line-height: 1.4rem;
+    font-size: 0.9rem;
 
   }
 
@@ -149,71 +143,61 @@ transition:all .1s;
     
 }
 
+/*arail*/
+.arail{background: url("../assets/Arail_bg.png");background-size: cover;}
+.arail .nav-link.active::after{background: #fff;}
+.arail .topic a, .arail .topic .h2, .arail .navbar-light .navbar-nav .nav-link{color: #ffffff;}
+.arail .topicSelected{color:#4a90e2;}
+.arail .topicSelected::after{background:#4a90e2;}
+.arail .topic a h2:hover{color:#4a90e2;}
+.arail .topic a h2:hover::after{background:#4a90e2;}
+.arail .hashList li{color: #fff;opacity: 0.5;}
+.arail .hashList li:nth-child(1),.arail .hashList li:nth-child(3),.arail .hashList li:nth-child(5),.arail .hashList li:nth-child(6){color: #4a90e2;opacity: 1;}
 
-.drawdiodescr{
-    position: relative; 
-    
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 0.1px;
-    text-align: right;
-    color: #17161b;
-}
-.drawdiodescr::after{
-    position: absolute;
-    content: '';
-    height: 100%;
-  top:0px;
-      right: -15px;
-      width: 4px;
-      background: #d53f38;
-}
 
-.drawdiofinal{
-    position: relative; 
-   font-weight: 500;
-   font-size: 1.3rem;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 0.1px;
-    text-align: center;
-    color: #fff;
-}
+/*Drawdio*/
+.drawdio{background: url("../assets/Drawdio_bg.png");background-size: cover;}
+.drawdio .nav-link.active::after{background: #fff;}
+.drawdio .topic a, .drawdio .topic .h2, .drawdio .navbar-light .navbar-nav .nav-link{color: #ffffff;}
+.drawdio .topicSelected{color:#f8e71c;}
+.drawdio .topicSelected::after{background:#f8e71c;}
+.drawdio .topic a h2:hover{color:#f8e71c;}
+.drawdio .topic a h2:hover::after{background:#f8e71c;}
+.drawdio .hashList li{color: #fff;opacity: 0.5;}
+.drawdio .hashList li:nth-child(1),.drawdio .hashList li:nth-child(3),.drawdio .hashList li:nth-child(5),.drawdio .hashList li:nth-child(6){color: #f8e71c;opacity: 1;}
 
-.drawdiofinal::after{
-    position: absolute;
-    content: '';
-    height: 4px;
-  bottom:-25px;
-  right: 40%;
-      width: 20%;
-      background: #d53f38;
-}
 
-.drawdiofooter{
-    font-size: 13px;
-   
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.2;
-    letter-spacing: 0.1px;
-    text-align: center;
-    color: #fff6;
-}
+/*juley*/
+.juley{background: url("../assets/Juley_bg.png");background-size: cover;}
+.juley .nav-link.active::after{background: #fff;}
+.juley .topic a, .juley .topic .h2, .juley .navbar-light .navbar-nav .nav-link{color: #ffffff;}
+.juley .topicSelected{color:#6cba93;}
+.juley .topicSelected::after{background:#6cba93;}
+.juley .topic a h2:hover{color:#6cba93;}
+.juley .topic a h2:hover::after{background:#6cba93;}
+.juley .hashList li{color: #fff;opacity: 0.5;}
+.juley .hashList li:nth-child(1),.juley .hashList li:nth-child(3),.juley .hashList li:nth-child(8),.juley .hashList li:nth-child(6){color: #6cba93;opacity: 1;}
 
-.shadow{
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-.show{opacity: 1 !important;}
-.hide{
-    opacity: 0;
-    -o-transition:all .5s;
-    -ms-transition:all .5s;
--moz-transition:all .5s;
--webkit-transition:all .5s;
-transition:all .5s;
-}
 
+/*most*/
+.most{background: url("../assets/Meter_bg.png");background-size: cover;}
+.most .nav-link.active::after{background: #fff;}
+.most .topic a, .most .topic .h2, .most .navbar-light .navbar-nav .nav-link{color: #ffffff;}
+.most .topicSelected{color:#4a4a4a;}
+.most .topicSelected::after{background:#4a4a4a;}
+.most .topic a h2:hover{color:#4a4a4a;}
+.most .topic a h2:hover::after{background:#4a4a4a;}
+.most .hashList li{color: #fff;opacity: 0.5;}
+.most .hashList li:nth-child(1),.most .hashList li:nth-child(3),.most .hashList li:nth-child(7),.most .hashList li:nth-child(8){color: #4a4a4a;opacity: 1;}
+
+
+/*Drawdio*/
+.jam{background: url("../assets/Jamculture_bg.png");background-size: cover;}
+.jam .nav-link.active::after{background: #fff;}
+.jam .topic a, .jam .topic .h2, .jam .navbar-light .navbar-nav .nav-link{color: #ffffff;}
+.jam .topicSelected{color:#3b3241;}
+.jam .topicSelected::after{background:#3b3241;}
+.jam .topic a h2:hover{color:#3b3241;}
+.jam .topic a h2:hover::after{background:#3b3241;}
+.jam .hashList li{color: #fff;opacity: 0.5;}
+.jam .hashList li:nth-child(1),.jam .hashList li:nth-child(3){color: #3b3241;opacity: 1;}

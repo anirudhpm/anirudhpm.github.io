@@ -7,9 +7,9 @@
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/animate.css">
+        
     </head>
-    <body>
+    <body onload="arail()">
             <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light px-3 mx-3">
                 <a class="navbar-brand mx-auto mr-md-auto ml-md-3" href="#"><img id="logo" src="assets/logo-icon2x.png"  width="32px"></a>
                         
@@ -33,21 +33,21 @@
                         <div class="row p-5 flex-row flex-nowrap h-100 ">
                             <div class="col-12 col-md-5 align-self-center h-100">
                                 <div class="d-flex justify-content-between flex-column h-100 mt-2">
-                                    <div class="topic"><a class="text-dark" href="#"><h2 class="d-inline-block">Arail</h2></a><span class="h2 p-2">  /</span>
-                                        <a class="text-dark" onclick="drawdio()"><h2 class="d-inline-block ">Drawdio </h2></a><span class="h2 p-2"> /</span>
-                                        <a class="text-dark" href="#"> <h2 class="d-inline-block">Juley  </h2></a><span class="h2 p-2">  /</span>
-                                        <a class="text-dark" href="#">  <h2 class="d-inline-block">Keep it today </h2> </a><span class="h2 p-2">  /</span>
-                                        <a class="text-dark" href="#"><h2 class="d-inline-block">Superstats  </h2> </a><span class="h2 p-2">  /</span>
-                                        <a class="text-dark" href="#"><h2 class="d-inline-block">Tune of Creativity</h2></a></div>
+                                    <div class="topic mt-5"><a class="" onmouseover="arail()"  onclick="arail()"><h2 class="d-inline-block topicSelected">Arail</h2></a><span class="h2 pl-1">/</span>
+                                        <a class="" onmouseover="drawdio()" onclick="drawdio()"><h2 class="d-inline-block ">Drawdio </h2></a><span class="h2 pl-1">/</span>
+                                        <a class=""  onmouseover="juley()" onclick="juley()"> <h2 class="d-inline-block">Juley  </h2></a><span class="h2 pl-1">/</span>
+                                        <a class=""  onmouseover="most()" onclick="most()">  <h2 class="d-inline-block">Meter of space & time </h2> </a><span class="h2 pl-1">/</span>
+                                       <a class=""  onmouseover="jam()" onclick="jam()"><h2 class="d-inline-block">Jamculture</h2></a><span class="h2 pl-1">/</span></div>
                               
                                         <ul class="hashList">
                                     <li>interactiondesign</li>
                                     <li>research</li>
+                                    <li>ui/ux</li>
                                     <li>music</li>
                                     <li>installation</li>
                                     <li>computing</li>
-                                    <li>productdesign</li>
                                     <li>dataviz</li>
+                                    <li>productdesign</li>
                                 </ul>
                                 </div>
                             </div>
@@ -66,12 +66,7 @@
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type='text/javascript' src="js/jquery.mousewheel.js"></script>
          <script src="js/script.js" ></script>
-         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js'></script>
-
+        
 </body>
 </html>
