@@ -45,6 +45,7 @@ body{
 height: 100vh;
 font-family: SpaceGrotesk;
 background-size: cover;
+display: none;
 
 -o-transition:all .3s linear ;
 -ms-transition:all .3s linear ;

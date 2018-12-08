@@ -1,5 +1,8 @@
 
-
+$(window).on('load',function() {
+  // When the page has loaded
+  $("body").fadeIn(200);
+});
 
 $('a.nav-item.nav-link').click(function(){
     $('a.nav-item.nav-link').removeClass('active');
