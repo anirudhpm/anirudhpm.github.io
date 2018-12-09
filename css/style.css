@@ -160,7 +160,7 @@ transition:all .1s;
 .arail .topic a h2:hover{color:#4a90e2;}
 .arail .topic a h2:hover::after{background:#4a90e2;}
 .arail .hashList li{color: #fff;opacity: 0.5;}
-.arail .hashList li:nth-child(1),.arail .hashList li:nth-child(3),.arail .hashList li:nth-child(5),.arail .hashList li:nth-child(6){color: #4a90e2;opacity: 1;}
+.arail .hashList li:nth-child(1),.arail .hashList li:nth-child(3),.arail .hashList li:nth-child(2){color: #4a90e2;opacity: 1;}
 
 
 /*Drawdio*/
