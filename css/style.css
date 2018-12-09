@@ -1,6 +1,6 @@
 #content{
     overflow: hidden;
-    height: 83vh;
+    height: 79vh;
 }
 .nav-link {
     position: relative;
@@ -74,7 +74,7 @@ transition:all .3s linear ;
       color: #343a40;
   }
 
-  .topic a h2{letter-spacing: 0.2px; font-size: 43px;}
+  .topic a h2{letter-spacing: 0.2px; font-size: 43px; cursor: pointer;}
 .topic span{
   vertical-align: top;
     line-height: 2.2rem;
@@ -223,3 +223,5 @@ transition:all .1s;
   position: absolute;
   left: -999em;
  }
+
+ @media (max-width: 720px) { .content{transform: scale(0.8);} }

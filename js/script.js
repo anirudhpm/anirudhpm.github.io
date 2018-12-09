@@ -27,6 +27,8 @@ function drawdio(){
 $('body').removeClass().addClass("drawdio");
 }
 
+
+
 function juley(){
     $('body').removeClass().addClass("juley");
     }
