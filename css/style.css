@@ -94,6 +94,8 @@ transition:all .3s linear ;
 transition:all .1s;
   }
 
+  .topic{margin-top: -5vh;}
+
   .topic a h2:hover::after{
      width: 100%;
   }
