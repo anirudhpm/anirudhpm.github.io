@@ -203,12 +203,12 @@ transition:all .1s;
 .jam{background: url("../assets/Jamculture_bg.png");background-size: cover;}
 .jam .nav-link.active::after{background: #fff;}
 .jam .topic a, .jam .topic .h2, .jam .navbar-light .navbar-nav .nav-link{color: #ffffff;}
-.jam .topicSelected{color:#3b3241;}
-.jam .topicSelected::after{background:#3b3241;}
-.jam .topic a h2:hover{color:#3b3241;}
-.jam .topic a h2:hover::after{background:#3b3241;}
+.jam .topicSelected{color:#d66851;}
+.jam .topicSelected::after{background:#d66851;}
+.jam .topic a h2:hover{color:#d66851;}
+.jam .topic a h2:hover::after{background:#d66851;}
 .jam .hashList li{color: #fff;opacity: 0.5;}
-.jam .hashList li:nth-child(1),.jam .hashList li:nth-child(3),.jam .hashList li:nth-child(2){color: #3b3241;opacity: 1;}
+.jam .hashList li:nth-child(1),.jam .hashList li:nth-child(3),.jam .hashList li:nth-child(2){color: #d66851;opacity: 1;}
 
 
 /* body:before will also work
